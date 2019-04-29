@@ -10,7 +10,9 @@
 
 @implementation RYRTestObject
 
-
+- (void)logSomeThing {
+    NSLog(@"dfd");
+}
 
 
 @end

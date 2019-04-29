@@ -20,14 +20,15 @@ Pod::Spec.new do |s|
     s.source = { :git => ['https://github.com/tangranyang/RYRUIUnity.git'], :tag => "v#{s.version}" }
 
     s.platform     = :ios, '8.0'            #支持的平台及版本
-#   s.source_files =  'RYRUIUnity/**/*.{h,m}'
+    s.source_files =  'RYRUIUnity/**/*.{h,m}'
 
-    s.prefix_header_contents = '#import "RYRBaseUIHeader.h"'
-    s.source_files = 'RYRUIUnity/RYRBaseUIHeader.h'
-    s.public_header_files = 'RYRUIUnity/RYRBaseUIHeader.h'
+#s.prefix_header_contents = '#import "RYRBaseUIHeader.h"'
+#s.source_files = 'RYRUIUnity/RYRBaseUIHeader.h'
+#s.public_header_files = 'RYRUIUnity/RYRBaseUIHeader.h'
 
     s.subspec 'RYRBaseUI' do |sp|
-        sp.source_files = 'RYRUIUnity/RYRBaseUI/**/*.{h,m,mm,c,cpp}'
+        sp.source_files = 'RYRUIUnity/RYRBaseUI/*.{h,m,mm,c,cpp}'
     end
+
     s.default_subspecs = 'RYRBaseUI'
 end
