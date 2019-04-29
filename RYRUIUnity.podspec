@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name = 'RYRUIUnity'
-    s.version = '0.0.1'
+    s.version = '0.0.2'
     s.license = 'MIT'
     s.summary = 'test'
     s.description  = <<-DESC
@@ -29,4 +29,5 @@ Pod::Spec.new do |s|
     s.subspec 'RYRBaseUI' do |sp|
         sp.source_files = 'RYRUIUnity/RYRBaseUI/**/*.{h,m,mm,c,cpp}'
     end
+    s.default_subspecs = 'RYRBaseUI'
 end
